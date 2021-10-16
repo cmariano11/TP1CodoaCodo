@@ -1,0 +1,163 @@
+header {
+    background-color: bisque;
+    height: 10rem;
+    width: 100%;
+}
+footer {
+    background-color: bisque;
+    text-align: center;
+    width: 100%;
+}
+.nav {
+    background-color: aquamarine;
+    font-size: 1.1em;
+    padding: 0.3%;
+    border-radius: 35%;
+}
+.nav1 { /* Esta clase se crea porque a la clase original .nav la rompe la libreria de Bootstrap */
+    background-color: aquamarine;
+    font-size: 1.1em;
+    padding: 0.3%;
+    border-radius: 35%;
+}
+/* Carousel */
+   .carousel-item > img {
+       height: 25em;
+   }
+   
+header > H1 {
+    font-family: 'Allison', cursive;
+    font-size: 5em;
+    font-weight: bolder;
+    text-align: center;
+}
+menu > H2 {
+    font-family: 'Allison', cursive;
+    font-size: 3rem;
+}
+/* menu > img { */
+.imagenIndex > img {
+    width: 19em;
+}
+/* Maquetado para ubicar Animacion de Index.html*/
+#contenedor-ppal{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 20em;
+    grid-template-areas: "aside camina"
+    ;
+}
+#aside {
+    grid-area: aside;
+}
+#aside > img {
+    width: 100%;
+    border-radius: 2em;
+}
+#camina {
+    grid-area: camina;
+}
+#patin {
+    background-image: url(Img/unnamed.gif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 87%;
+}
+#camina:hover #patin {
+    margin-left: 100%;
+    transition: all 3s;
+    transition-timing-function: cubic-bezier(1, 0.46, 0.48, 1);
+}
+  /*Fin Maquetado para ubicar animacion Index.html*/
+
+.cocinero, .pizza {
+    width: 10em;
+}
+#linkCarousel { font-size: 1.2em;}
+.tablaingredientes {
+    border: 0.125em red solid;
+}
+
+.instruccionreceta {
+    border: 0.125em grey solid;
+    border-radius: 0.3em;
+    padding: 0.3em;
+    /* font-weight: 900; */
+    font-weight: bold;
+    color: black;
+    font-style: italic;
+}
+
+.redsoc {
+    color: black;
+    font-size: 1.5vw;
+    text-align: center;
+}
+#face:hover {
+    color: blue;
+    margin: 0px 0.35em;
+    font-size: 2vw; /*20px*/
+}
+#twitter:hover {
+    color: rgb(20, 208, 241);
+    margin: 0px 0.35em;
+    font-size: 2vw; /*20px*/
+}
+#igram:hover {
+    color: rgb(230, 32, 14);
+    margin: 0px 0.35em;
+    font-size: 2vw; /*20px*/
+}
+.formulario {
+    border-radius: 8px;
+    background-color: rgb(214, 251, 239);
+    width: 60%;
+    margin: 0% 20%;
+}
+input[type=submit]:hover {
+    background-color: forestgreen;
+}
+input[type=reset]:hover {
+    background-color: rgb(159, 235, 248);
+}
+
+#contenedor {
+    margin-left: 10%;
+    margin-right: 10%;
+    border: 0.5em grey groove;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    /* align-content: space-around ; */
+}
+.item {
+    border: 0.125em orangered solid;
+    padding: 0.125em;
+    margin: 0.125em;
+
+}
+.item img {
+    width: 20em;
+}
+#grande {
+    display: block;
+}
+#chico {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    #contenedor {
+        background-color: darkseagreen;
+        flex-direction: column;
+    }
+    #grande {
+        display: none;
+    }
+    #chico {
+        display: block;
+    }
+}

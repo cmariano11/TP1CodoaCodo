@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP1</title>
+    <link rel="icon" href="img/argentina.ico">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Allison&display=swap">
+    <script src="https://kit.fontawesome.com/b0ba910800.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="nav" href="Index.html">Home</a>
+            <a class="nav" href="about.html">Acerca de</a>
+            <a class="nav" href="sucursales.html">Sucursales</a>
+            <a class="nav" href="registrese.html">Registrese</a>
+            <a class="nav" href="contact.html">Contacto</a>
+            <a class="nav" href="clientes.html">Clientes</a>
+            <a  class="nav" href="auspiciantes.html">Nuestros auspiciantes</a>
+        </nav>
+        <h1>La pizzeria de la nona</h1>
+    </header>
+    <menu>
+        
+        <form action="show_data.html" class="formulario" method="get" target="blank">
+            <h3><u>-Datos personales-</u></h3>
+
+            <!-- ****** Aca pido el nombre que quiero validar en el JScript ****** -->
+
+            <label for="nombre">Nombre :</label>
+            <input type="text" name="nombre" id="nombre" size="15" maxlength="30" ><br><br>
+
+            <label for="apellido">Apellido :</label>
+            <input type="text" name="apellido" id="apellido" size="15" maxlength="30" required><br><br>
+            <label for="direccion">Direccion :</label>
+            <input type="text" name="direccion" id="direccion" size="15" maxlength="30"><br><br>
+            <label for="ciudad">Ciudad :</label>
+            <input type="text" name="ciudad" id="ciudad" size="15" maxlength="30"><br><br>
+            <label for="fechanacimiento">Fecha de nacimiento :</label>
+            <input type="date" name="fechanacimiento" id="fechanacimiento"><br><br>
+            
+            <label>Telefono con formato (123)4123-1213</label>
+            <input type="tel" name="tel1" id="tel1" pattern="[0-9]{3}" placeholder="###" size="3" maxlength="3">
+            <input type="tel" name="tel2" id="tel2" pattern="[0-9]{4}" placeholder="####" size="4" maxlength="4">
+            <input type="tel" name="tel3" id=tel3 pattern="[0-9]{4}" placeholder="####" size="4" maxlength="4"><br><br>
+        
+            <label for="sexo">Genero :</label>
+            <select name="sexo" id="sexo">
+                <option value="femenino">Femenino</option>
+                <option value="masculino">Masculino</option>
+                <option value="otro">Otro</option>
+            </select><br><br>
+            <label for="condicioncivil">Estado civil :</label>
+            <input type="radio" name="condicioncivil" id="condicioncivil" value="soltero" checked>Soltero
+            <input type="radio" name="condicioncivil" id="condicioncivil" value="casado">Casado
+            <input type="radio" name="condicioncivil" id="condicioncivil" value="divorciado">Divorciado
+            <input type="radio" name="condicioncivil" id="condicioncivil" value="conviviente">Conviviente <br><br>
+            <label for="estudios">Estudios :</label>
+            <input type="checkbox" name="estudios" id="estudios" value="primario">Primario
+            <input type="checkbox" name="estudios" id="estudios" value="secundario">Secundario
+            <input type="checkbox" name="estudios" id="estudios" value="terciario">Terciario
+            <input type="checkbox" name="estudios" id="estudios" value="universitario">Universitario
+            <input type="checkbox" name="estudios" id="estudios" value="otro">Otro <br><br>
+            
+        
+        <br><br><br><input type="submit" value="Enviar" name="enviar" id="enviar"> <input type="reset" name="reset" id="reset" value="Borrar">
+        </form>
+        
+    </menu>
+    <footer>
+        <br>
+        <a class="redsoc" id="face" href="http://facebook.com"><i class="fab fa-facebook"></i></a>
+        <a class="redsoc" id="twitter" href="http://twitter.com"><i class="fab fa-twitter"></i></a>
+        <a class="redsoc" id="igram" href="http://instagram.com"><i class="fab fa-instagram-square"></i></a>
+        <p>Derechos reservados @2021</p>
+        <br>
+    </footer>    
+<script src="JScript.js"></script>
+</body>
+</html>
