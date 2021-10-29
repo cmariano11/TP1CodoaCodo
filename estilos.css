@@ -160,6 +160,7 @@ input[type=reset]:hover {
     #chico {
         display: block;
     }
+    /* Modificacion 29/10/2021 */
     .item {
         border: none;
         padding: unset;
@@ -169,4 +170,5 @@ input[type=reset]:hover {
     .item img {
         width: 100%;
     }
+    /* Fin 29/10/2021 */
 }
