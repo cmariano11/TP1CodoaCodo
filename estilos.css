@@ -160,4 +160,13 @@ input[type=reset]:hover {
     #chico {
         display: block;
     }
+    .item {
+        border: none;
+        padding: unset;
+        margin: unset;
+    
+    }
+    .item img {
+        width: 100%;
+    }
 }
